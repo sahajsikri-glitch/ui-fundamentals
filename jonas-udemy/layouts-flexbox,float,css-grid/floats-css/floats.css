@@ -53,3 +53,13 @@ coz we know el after float will float around it*/
 
   clear: both;
 }   */
+
+/*BOX-SIZING -> BORDER-BOX :  */
+/* sometimes due to padding of element it collapses with other one 
+and float no successful uppar neeche hogaya 
+then : width and height set krdo FIXED --> jiske andar hi rahgea sab */
+aside {
+  padding: 900px 900px;
+  /* does not care about 900 --> IGNORE */
+  box-sizing: border-box;
+}
