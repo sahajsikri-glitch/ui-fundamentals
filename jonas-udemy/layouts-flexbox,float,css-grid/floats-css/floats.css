@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 } */
 /* #author {
-  float: left;
+  float: right;
   margin-top: 10px;
   margin-left: 20px;
 } */
@@ -16,16 +16,24 @@
 
 nav {
   float: right;
+  /* whenevr you use floats its like elements 
+  are not even fucking on the page it ignores it ! */
 }
 /* .clear {*/
 /* clear: both; */
+/* HEIGHT COLLAPSING  */
 /* used to prevent it from floating around that fuckin el
 used in other eleents not the floated element */
 /* }  */
+
 .clearfix::after {
+  /* this will add an el at the end */
+  /* just like creating empty div at the end */
   clear: both;
   content: "";
+  /* there should be some vcontent even if its empty */
   display: block;
+  /* only works on block element */
 }
 
 /* article {
@@ -37,7 +45,11 @@ aside {
   width: 300px;
   float: right;
 }
+  
+/* why needed foother?
+coz we know el after float will float around it*/
 
-footer {
+/* footer {
+
   clear: both;
-}  */
+}   */
