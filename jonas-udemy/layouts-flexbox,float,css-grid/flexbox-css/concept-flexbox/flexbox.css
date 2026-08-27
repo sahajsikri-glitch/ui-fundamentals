@@ -7,6 +7,7 @@
 .el--3 {
   background-color: green;
   height: 150px;
+  /* everyone's height will be decided by tallest one ! */
 }
 .el--4 {
   background-color: goldenrod;
@@ -33,8 +34,9 @@
 
   /* FLEXBOX */
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center; /* vertically aligned  */
+  justify-content: flex-start; /*horizonatally aligned  */
+  justify-content: space-between; /*space in bw horizontally*/
   gap: 10px;
 }
 
