@@ -18,4 +18,32 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   line-height: 1;
+  display: flex;
+}
+table {
+  width: 800px;
+  /* background-color: red; */
+  margin: 100px auto;
+  /* border: 1px solid #343a40; */
+  /* V.impmpmp for border collapsing */
+  border-collapse: collapse;
+  font-size: 18px;
+}
+th,
+td {
+  /* border: #343a40 1px solid; */
+  padding: 16px 24px;
+  text-align: start;
+}
+.main-heading {
+  background-color: #087f5b;
+  color: #fff;
+  width: 25%;
+}
+/* ZEBRA STRIPES */
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
 }
