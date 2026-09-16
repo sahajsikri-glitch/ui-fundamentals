@@ -1,0 +1,52 @@
+.main-bg {
+  height: 100px;
+  width: 500px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  align-items: center;
+}
+ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #343a40;
+  text-decoration: none;
+  padding: 10px 13px;
+}
+ul li a:hover {
+  background-color: #087f5b;
+  color: #fff;
+  border-radius: 50%;
+  stroke-width: 2px;
+  stroke: #087f5b;
+}
+.full-num {
+  color: #fff;
+  background-color: #087f5b;
+  border-radius: 50%;
+  padding: 10px 13px;
+}
+.full-num:hover {
+}
+button {
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #087f5b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon {
+  height: 24px;
+  width: 24 px;
+  stroke-width: 2px;
+  stroke: #087f5b;
+}
