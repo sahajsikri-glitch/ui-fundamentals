@@ -7,6 +7,19 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  height: 100vh;
+  position: relative;
+  /* to add bg-image in pearticular region */
+
+  /* need a liner gradient to darken or lighten image*/
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6) rgb(0, 0, 0, 0.6)), url(hero.jpg);
+  /* experiment with colours over here  */
+  /* helps to cover full image in our section */
+  background-size: cover;
+  color: #fff;
+}
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -16,10 +29,29 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  padding-top: 32px;
+  /* vvvv immpo --> how to make gradient */
+  /* background-image: linear-gradient(to red, blue); */
+}
+.header-container {
+  width: 1200px;
+  position: absolute;
+  /* in relation to parent size */
+  top: 50%;
+  right: 50%;
+  /* in relation to its own element size */
+  transform: translate(-50%, -50%);
+}
+.inner-container {
+  /* in relation to parent element */
+  width: 50%;
+  /* very imppp coz -> we want text to be
+   in short width box not horizontally longg*/
 }
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05px;
 }
 p {
   font-size: 20px;
