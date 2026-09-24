@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* if we want body to cover all the height of our html page */
+  height: 100vh;
+  font-family: sans-serif;
+  color: grey;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+nav {
+  background-color: grey;
+  grid-row: 1/-1;
+}
+menu {
+  background-color: skyblue;
+  color: white;
+  grid-column: 2/-1;
+  display: flex;
+  gap: 12px;
+  padding: 0 40px;
+}
+section {
+  background-color: bisque;
+}
+aside {
+  background-color: aliceblue;
+}
+nav,
+aside,
+section,
+main {
+  padding-top: 24px;
+}
+button {
+  font-size: 16px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+  font: bold;
+  display: inline-block;
+}
+button:last-child {
+  background-color: palevioletred;
+  margin-left: auto;
+}
