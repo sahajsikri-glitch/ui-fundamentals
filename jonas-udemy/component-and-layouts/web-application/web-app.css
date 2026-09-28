@@ -25,11 +25,9 @@ menu {
   color: white;
   grid-column: 2/-1;
   display: flex;
+  align-items: center;
   gap: 12px;
   padding: 0 40px;
-}
-section {
-  background-color: bisque;
 }
 aside {
   background-color: aliceblue;
@@ -47,10 +45,30 @@ button {
   cursor: pointer;
   color: white;
   padding: 8px 12px;
-  font: bold;
+  font-weight: bold;
   display: inline-block;
 }
 button:last-child {
   background-color: palevioletred;
+  /*TRICK :  to move this element to atmost right corner */
   margin-left: auto;
+}
+section {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* elements that doesnt fir allow it to scroll or hide it or any other operation */
+  overflow: scroll;
+}
+.email {
+  background-color: lightgrey;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  /* imppimppp -> for scrolling*/
+  /* need to strop shrinking coz its flex nature to shrink elements to fit all */
+  flex-shrink: 0;
 }
